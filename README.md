@@ -19,9 +19,8 @@ A comprehensive event scheduling application built with **Spring Boot** and **My
 - **API Documentation:** Swagger UI
 
 ## 📊 Documentation
-- [Design Document](./docs/design-doc.md)
-- [STRIDE Threat Model](./docs/stride-threat-model.md)
-
+- [Design Document](./docs/event_scheduler_design.md)
+- [STRIDE Threat Model](./docs/event_scheduler_stride.md)
 ## ⚡ Setup Instructions
 1. Clone the repo:
    ```bash
