@@ -1,57 +1,58 @@
-# Event-Scheduler-Application
-<!-- This is a Spring Boot application that provides a REST API for scheduling events. The API is secured using JSON Web Tokens (JWT). Swagger UI is also provided for easy testing and documentation of the API. -->
 
-- The Event Scheduler App built using Spring Boot 3.0 that provides RESTful APIs which can be easily integrated into any application for scheduling and managing events.
 
-- The APIs allow users to create, update, and delete, retrieve a list of events for a specific time like Day, Week, or Month. Users can also register, update and retrieve the details by themselves. They are secured using JSON Web Tokens (JWT) to ensure that only authorized users can access the data.
+### 📄 README Update: Dynamic Event Scheduler Web Application
 
-- In addition to the core functionality, the APIs include Swagger UI for easy testing and documentation of the API. This allows developers to easily explore the available endpoints and see example requests and responses.
+# Dynamic Event Scheduler
 
-- The APIs use MySQL as their database for storing events and user information. They are designed to be scalable and can handle a large number of events and users.
+A comprehensive event scheduling application built with **Spring Boot** and **MySQL**, allowing users to manage events and view schedules efficiently.
 
-- Overall, the Event Scheduler APIs are a powerful tool for developers looking to build event scheduling and management functionality into their applications. Their secure design and easy-to-use interface make them suitable for use in a wide range of environments.
+## 🚀 Features
+- Full CRUD operations for events
+- JWT-based secure user authentication
+- Event calendar views (Day, Week, Month)
+- Comprehensive API documentation using Swagger
 
-# Features
-- User Registration & Login
-- Update & Fetch User Details
-- Schedule, Update, Delete Event
-- Get Event By Type [Day, Week, Month]
+## 🛠️ Tech Stack
+- **Backend:** Spring Boot 3.0
+- **Database:** MySQL
+- **Authentication:** JSON Web Tokens (JWT)
+- **API Documentation:** Swagger UI
 
-# Security
-- The API is secured using JSON Web Tokens (JWT). To access the API, you will need to obtain a JWT by authenticating with the /login endpoint. The JWT should then be passed in the Authorize option available in the Swagger-ui.
+## 📊 Documentation
+- [Design Document](./docs/design-doc.md)
+- [STRIDE Threat Model](./docs/stride-threat-model.md)
 
-  ### Example:
-  - Authorization: <your_jwt>
+## ⚡ Setup Instructions
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/chuksieee/Event-Scheduler-Application.git
+   ```
+2. Build the project:
+   ```bash
+   mvn clean install
+   ```
+3. Run the application:
+   ```bash
+   mvn spring-boot:run
+   ```
+4. Access API docs at `http://localhost:8080/swagger-ui.html`
 
-# Technologies:
-- Java 17 or above
-- Spring Boot 3.0
-- Spring Data JPA
-- JSON Web Tokens (JWT)
-- MySQL
-- Swagger-ui
+## 🛡️ Security
+- JWT tokens for user authentication
+- HTTPS encryption for all sensitive data
+- Input validation and role-based access control
 
-# Running the app
-1. Clone the repository: git clone https://github.com/Sirajuddin135/Event-Scheduler-Application.git
-2. Import the project into STS:
-  - Click File > Import...
-  - Select Maven > Existing Maven Projects and click Next
-  - Browse to the project directory and click Finish
-3. Update the values in application.properties with your MySQL database connection details.
-4. Run the app: Right-click the project in the Package Explorer and click Run As > Spring Boot App.
-5. The app will be running at http://localhost:8080.
+---
 
-# API documentation
-- API documentation is available via Swagger UI at http://localhost:8080/swagger-ui/index.html
+This README update ensures that engineers and recruiters can easily access the **Design Docs**, **Threat Models**, and have clear instructions for running each project.
 
-# Event Scheduler Image
-<img width="188" alt="Event-Scheduler-Image" src="https://user-images.githubusercontent.com/101395494/211131507-fb25a63c-c620-4d2f-8446-c97aa6316ce9.png">
 
-# ER-Diagram
-![ER_Diagram](https://user-images.githubusercontent.com/101395494/210177816-c40d34a0-ebb9-488d-b904-35ccf4ad417c.jpg)
 
-# Swagger-ui
-<img width="948" alt="Swagger-ui" src="https://user-images.githubusercontent.com/101395494/210170660-4f6bd3b0-ec1b-411f-82c1-c059ad14d567.png">
+```vercel```
+
+This command will start the deployment process. Follow the prompts, and Vercel will guide you through the setup.
+
+Once the deployment is successful, Vercel will provide you with a deployment link. You can include this link in your README file under a "Deployment" section.
 
 # API Controllers
 <img width="939" alt="Event App Controllers" src="https://user-images.githubusercontent.com/101395494/210179001-2b271f7a-6f13-4060-979b-e88e5a803a93.png">
